@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map structurelle — maquette by swapservice</title>
+    <style>
+      :root { --b:#111; --g:#777; --bg:#fff; }
+      * { box-sizing:border-box; }
+      body { margin:0; font-family: Arial, Helvetica, sans-serif; color:var(--b); background:var(--bg); }
+      .wrap { width:min(1100px, 100% - 2rem); margin:0 auto; padding:1.5rem 0 2rem; }
+      h1 { margin:0 0 .35rem; font-size:1.35rem; }
+      .note { margin:0 0 1rem; color:#444; font-size:.9rem; }
+      .grid { display:grid; grid-template-columns: 1fr 1fr; gap:1rem; }
+      .panel { border:2px solid #111; padding:.8rem; background:#fff; }
+      .panel h2 { margin:0 0 .6rem; font-size:.92rem; text-transform:uppercase; letter-spacing:.04em; }
+      .box { border:2px solid #111; padding:.45rem .5rem; background:#fff; font-size:.82rem; font-weight:700; text-align:center; }
+      .row { display:grid; gap:.55rem; }
+      .row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+      .row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+      .arrow { text-align:center; font-size:1.05rem; color:#111; line-height:1; margin:.15rem 0; }
+      .legend { margin-top:.55rem; font-size:.78rem; color:#555; border-top:1px dashed #999; padding-top:.4rem; }
+      .tree { border:2px solid #111; padding:.8rem; }
+      .level { display:grid; gap:.55rem; margin-bottom:.6rem; }
+      .level.home { grid-template-columns: 1fr; }
+      .level.main { grid-template-columns: repeat(4, 1fr); }
+      .level.services { grid-template-columns: repeat(6, 1fr); }
+      .mobile-frames { display:grid; grid-template-columns: repeat(3, 1fr); gap:.6rem; }
+      .phone { border:2px solid #111; min-height:160px; padding:.45rem; }
+      .ph-top { border:1px solid #111; height:18px; margin-bottom:.35rem; }
+      .ph-media { border:1px solid #111; height:56px; margin-bottom:.35rem; position:relative; }
+      .ph-media::before, .ph-media::after { content:""; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; width:120%; height:1px; background:#777; }
+      .ph-media::before { transform: rotate(25deg); }
+      .ph-media::after { transform: rotate(-25deg); }
+      .ph-line { border:1px solid #777; height:10px; margin:.25rem 0; }
+      .credit { margin-top:1rem; text-align:center; font-size:.8rem; color:#666; }
+      @media print {
+        @page { size: A4 landscape; margin: 12mm; }
+        body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>Map structurelle — toutes les pages</h1>
+      <p class="note">Schéma simple pour expliquer au client le parcours du site (desktop + mobile), sans design final.</p>
+
+      <section class="grid">
+        <article class="panel">
+          <h2>Parcours desktop (wireframe)</h2>
+          <div class="row cols-4">
+            <div class="box">HEADER<br />Logo · Menu · Devis</div>
+            <div class="box">HERO<br />Titre + média</div>
+            <div class="box">TRUST<br />Logos clients</div>
+            <div class="box">CARDS<br />Blocs offres</div>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="row cols-3">
+            <div class="box">SERVICES</div>
+            <div class="box">RÉALISATIONS</div>
+            <div class="box">CONTACT / DEVIS</div>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="box">FOOTER (maquette by swapservice)</div>
+          <p class="legend">Chaque cadre média peut contenir une <strong>image</strong> ou une <strong>vidéo</strong>.</p>
+        </article>
+
+        <article class="panel">
+          <h2>Arborescence pages</h2>
+          <div class="tree">
+            <div class="level home">
+              <div class="box">index.html (Accueil)</div>
+            </div>
+            <div class="arrow">↓</div>
+            <div class="level main">
+              <div class="box">services.html</div>
+              <div class="box">realisations.html</div>
+              <div class="box">contact.html</div>
+              <div class="box">devis.html</div>
+            </div>
+            <div class="arrow">↓</div>
+            <div class="level services">
+              <div class="box">service-congres</div>
+              <div class="box">service-seminaires</div>
+              <div class="box">service-lancement</div>
+              <div class="box">service-institutionnel</div>
+              <div class="box">service-incentive</div>
+              <div class="box">service-gala</div>
+            </div>
+            <div class="arrow">↓</div>
+            <div class="level main" style="grid-template-columns:repeat(3,1fr)">
+              <div class="box">cas congrès</div>
+              <div class="box">cas séminaire</div>
+              <div class="box">cas lancement</div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel" style="margin-top:1rem;">
+        <h2>Version mobile (structure flexible)</h2>
+        <div class="mobile-frames">
+          <div class="phone">
+            <div class="ph-top"></div>
+            <div class="ph-media"></div>
+            <div class="ph-line"></div>
+            <div class="ph-line"></div>
+            <div class="ph-line"></div>
+          </div>
+          <div class="phone">
+            <div class="ph-top"></div>
+            <div class="ph-media"></div>
+            <div class="ph-line"></div>
+            <div class="ph-line"></div>
+            <div class="ph-line"></div>
+          </div>
+          <div class="phone">
+            <div class="ph-top"></div>
+            <div class="ph-media"></div>
+            <div class="ph-line"></div>
+            <div class="ph-line"></div>
+            <div class="ph-line"></div>
+          </div>
+        </div>
+      </section>
+
+      <p class="credit">maquette by swapservice</p>
+    </main>
+  </body>
+</html>

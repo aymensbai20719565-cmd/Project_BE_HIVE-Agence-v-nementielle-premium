@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil — maquette fil de fer</title>
+    <meta name="description" content="Maquette fonctionnelle : structure type site, sans charte finale." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo-mark" href="index.html">LOGO</a>
+        <nav class="nav" aria-label="Navigation">
+          <ul class="nav-list">
+            <li><a href="index.html" aria-current="page">ACCUEIL</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="realisations.html">RÉALISATIONS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+          <a class="btn btn-primary" href="devis.html">DEVIS</a>
+        </nav>
+        <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Zone type site agence : titres lisibles + blocs fil de fer -->
+      <section class="wf-hero-site" aria-label="En-tête de page d'accueil">
+        <div class="wf-hero-strip">
+          <div class="container wf-hero-strip-inner">
+            <p class="wf-kicker">Agence événementielle premium</p>
+            <h1>La ruche qui marque les esprits</h1>
+            <div class="wf-lines" aria-hidden="true">
+              <span class="wf-line"></span>
+              <span class="wf-line wf-line--mid"></span>
+              <span class="wf-line wf-line--short"></span>
+            </div>
+            <div class="wf-hero-cta">
+              <a class="btn btn-primary" href="devis.html">Demander un devis</a>
+              <a class="btn btn-secondary" href="realisations.html">Voir nos réalisations</a>
+            </div>
+          </div>
+        </div>
+        <div class="container wf-hero-visual-block">
+          <p class="wf-legend">Visuel principal — remplacer par <strong>image</strong> ou <strong>vidéo</strong> (logo, showreel…)</p>
+          <div class="hero-media wf-hero-media">
+            <div class="wf-media-frame wf-media-frame--hero">
+              <div
+                class="placeholder placeholder-hero placeholder-x"
+                role="img"
+                aria-label="Placeholder image ou vidéo"
+              ></div>
+              <p class="wf-frame-hint wf-frame-hint--hero" lang="fr">
+                <strong>Grand cadre du site</strong> : votre logo ou visuel principal.<br />
+                Soit une <strong>image</strong> (photo / graphique), soit une <strong>vidéo</strong> courte — pas besoin de terme technique : on choisit plus tard ensemble.
+              </p>
+            </div>
+            <div class="wf-media-badges">
+              <span class="wf-type wf-type--img" title="Option média">Image</span>
+              <span class="wf-type wf-type--vid" title="Option média">Vidéo</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wf-trust" aria-label="Logos partenaires (placeholder)">
+        <div class="container">
+          <h2 class="wf-section-title">Ils nous font confiance</h2>
+          <p class="wf-legend wf-legend--small">Chaque pastille = logo client (image) — même emplacement peut accueillir une courte vidéo.</p>
+          <div class="wf-trust-row">
+            <div class="wf-trust-item">
+              <span class="wf-logo-circle" aria-hidden="true">L</span>
+              <div class="wf-lines wf-lines--tight"><span class="wf-line"></span><span class="wf-line wf-line--short"></span></div>
+            </div>
+            <div class="wf-trust-item">
+              <span class="wf-logo-circle" aria-hidden="true">L</span>
+              <div class="wf-lines wf-lines--tight"><span class="wf-line"></span><span class="wf-line wf-line--short"></span></div>
+            </div>
+            <div class="wf-trust-item">
+              <span class="wf-logo-circle" aria-hidden="true">L</span>
+              <div class="wf-lines wf-lines--tight"><span class="wf-line"></span><span class="wf-line wf-line--short"></span></div>
+            </div>
+            <div class="wf-trust-item">
+              <span class="wf-logo-circle" aria-hidden="true">L</span>
+              <div class="wf-lines wf-lines--tight"><span class="wf-line"></span><span class="wf-line wf-line--short"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wf-cards" aria-label="Extraits d'offre">
+        <div class="container">
+          <h2 class="wf-section-title">Aperçu (cartes)</h2>
+          <p class="wf-legend wf-legend--small">
+            Sur chaque carte : zone média = <strong>logo image</strong> ou <strong>logo / fond vidéo</strong> selon le besoin.
+          </p>
+          <div class="wf-cards-grid">
+            <article class="wf-card">
+              <div class="wf-card-visual">
+                <span class="wf-type wf-type--img">Logo image</span>
+                <div class="wf-media-frame">
+                  <div class="placeholder placeholder-x wf-card-ph" aria-hidden="true"></div>
+                  <p class="wf-frame-hint" lang="fr">
+                    Votre <strong>logo</strong> ici : en <strong>image</strong> (photo) ou en <strong>vidéo</strong>
+                  </p>
+                </div>
+              </div>
+              <h3 class="wf-card-title">Congrès &amp; science</h3>
+              <div class="wf-lines wf-lines--tight"><span class="wf-line"></span><span class="wf-line wf-line--mid"></span></div>
+            </article>
+            <article class="wf-card">
+              <div class="wf-card-visual">
+                <span class="wf-type wf-type--vid">Logo vidéo</span>
+                <div class="wf-media-frame">
+                  <div class="placeholder wf-card-ph wf-card-ph--video" aria-hidden="true">
+                    <span class="wf-play" aria-hidden="true"></span>
+                  </div>
+                  <p class="wf-frame-hint" lang="fr">
+                    Exemple <strong>vidéo</strong> : même idée — <strong>image</strong> ou <strong>vidéo</strong> au centre du cadre
+                  </p>
+                </div>
+              </div>
+              <h3 class="wf-card-title">Séminaires &amp; leadership</h3>
+              <div class="wf-lines wf-lines--tight"><span class="wf-line"></span><span class="wf-line wf-line--short"></span></div>
+            </article>
+            <article class="wf-card">
+              <div class="wf-card-visual">
+                <span class="wf-type wf-type--img">Logo image</span>
+                <div class="wf-media-frame">
+                  <div class="placeholder placeholder-x wf-card-ph" aria-hidden="true"></div>
+                  <p class="wf-frame-hint" lang="fr">
+                    Votre <strong>logo</strong> ici : en <strong>image</strong> (photo) ou en <strong>vidéo</strong>
+                  </p>
+                </div>
+              </div>
+              <h3 class="wf-card-title">Lancements &amp; gala</h3>
+              <div class="wf-lines wf-lines--tight"><span class="wf-line"></span><span class="wf-line"></span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer site-footer--simple">
+      <div class="container footer-wf">
+        <div>
+          <h3 class="footer-wf-heading">Liens utiles</h3>
+          <ul class="footer-lines">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-wf-heading">Contact</h3>
+          <ul class="footer-lines">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-wf-heading">Infos</h3>
+          <ul class="footer-lines">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom footer-credit-wrap">
+        <p class="footer-credit">maquette by swapservice</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
